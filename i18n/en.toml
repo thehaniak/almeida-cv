@@ -21,3 +21,9 @@ other = "Diplomas"
 
 [interests]
 other = "Interests"
+
+[learning]
+other = "Learning"
+
+[publicProjects]
+other = "Public Projects"

@@ -1,0 +1,20 @@
+{{ if .PublicProjects }}
+<div id="publicProjects" class="section">
+    <div class="section__heading">
+        <h2 class="section__title">
+            {{ i18n "publicProjects" }}
+        </h2>
+    </div>
+    <div class="section__content">
+        {{ range .PublicProjects }}
+            <div class="publicProjects__item">
+                {{ if .Link }}<a class="contact__link" href="{{ .Link }}" target="_blank">{{ end}}
+                <h3 class="publicProjects__name">{{ .Name | safeHTML }}</h3>
+                {{ if .Link }}</a>{{ end }}
+                {{ if .Description }}<p class="publicProjects__description">{{ .Description | safeHTML }}</p>{{ end }}
+                {{ if .Technologies }}<ul>{{ range .Technologies }}<li class="experience__badge">{{ . }}</li>{{ end }}</ul>{{ end }}
+            </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

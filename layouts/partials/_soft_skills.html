@@ -1,0 +1,14 @@
+{{ if .SoftSkills }}
+<div class="sideSection">
+    <div class="sideSection__heading">
+        <h2 class="sideSection__title">{{ i18n "softSkills" }}</h2>
+    </div>
+    <div class="sideSection__content">
+        <ul class="skills__group">
+            {{ range .SoftSkills }}
+            <li>{{ . | safeHTML }}</li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+{{ end }}

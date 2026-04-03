@@ -13,6 +13,9 @@ other = "References"
 [skills]
 other = "Compétences"
 
+[softSkills]
+other = "Compétences Transversales"
+
 [languages]
 other = "Langues"
 

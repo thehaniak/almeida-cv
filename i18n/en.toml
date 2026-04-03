@@ -13,6 +13,9 @@ other = "References"
 [skills]
 other = "Skills"
 
+[softSkills]
+other = "Soft Skills"
+
 [languages]
 other = "Languages"
 

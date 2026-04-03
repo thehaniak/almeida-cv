@@ -13,6 +13,9 @@ other = "推荐人"
 [skills]
 other = "技能"
 
+[softSkills]
+other = "软技能"
+
 [languages]
 other = "语言"
 

@@ -13,6 +13,9 @@ other = "Referencias"
 [skills]
 other = "Habilidades"
 
+[softSkills]
+other = "Habilidades Blandas"
+
 [languages]
 other = "Idiomas"
 

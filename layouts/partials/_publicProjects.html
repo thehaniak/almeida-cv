@@ -9,7 +9,7 @@
         {{ range .PublicProjects }}
             <div class="publicProjects__item">
                 {{ if .Link }}<a class="contact__link" href="{{ .Link }}" target="_blank">{{ end}}
-                <h3 class="publicProjects__name">{{ .Name | safeHTML }}</h3>
+                <h3 class="publicProjects__name">{{ .Name | safeHTML }}{{ if .Link }} <i class="fas fa-external-link-alt"></i>{{ end }}</h3>
                 {{ if .Link }}</a>{{ end }}
                 {{ if .Description }}<p class="publicProjects__description">{{ .Description | safeHTML }}</p>{{ end }}
                 {{ if .Technologies }}<ul>{{ range .Technologies }}<li class="experience__badge">{{ . }}</li>{{ end }}</ul>{{ end }}
